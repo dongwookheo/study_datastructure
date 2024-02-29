@@ -1,3 +1,9 @@
+"""
+@file: stack_test.py
+@brief Test Stack class
+@author: dongwook heo
+@time: 2024-02-29
+"""
 from data_structure import stack
 
 if __name__ == '__main__':
