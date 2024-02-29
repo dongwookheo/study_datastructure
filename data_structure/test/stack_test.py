@@ -2,7 +2,7 @@
 @file: stack_test.py
 @brief Test Stack class
 @author: dongwook heo
-@time: 2024-02-29
+@date: 2024-02-29
 """
 from data_structure import stack
 
