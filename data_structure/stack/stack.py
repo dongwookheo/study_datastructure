@@ -52,7 +52,7 @@ class Stack:
         else:
             sys.exit("Stack overflow!")
 
-    def pop(self) -> Union[str, int, float, bool, None]:
+    def pop(self) -> Union[str, int, float, bool]:
         """
         @brief Pop an element from the top of the stack
         @return The element at the top of the stack
@@ -65,7 +65,7 @@ class Stack:
         else:
             sys.exit("Stack underflow!")
 
-    def peek(self) -> Union[str, int, float, bool, None]:
+    def peek(self) -> Union[str, int, float, bool]:
         """
         @brief Return the element at the top of the stack
         @return The element at the top of the stack
