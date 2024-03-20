@@ -3,6 +3,13 @@ import random
 
 
 def queue_using_Queue():
+    """
+    @brief Example of queue with queue.Queue
+
+    enqueue(), dequeue() -> put(), get()
+    is_empty(), is_full() -> empty(), full()
+    Does not provide 'peek()' method
+    """
     q = queue.Queue(20)
 
     print("Order of insertion: ")
