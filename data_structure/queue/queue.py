@@ -18,7 +18,7 @@ class CircularQueue:
     Therefore, only a circular queue that may prevent such inefficient operation was written.
     """
 
-    def __init__(self, capacity: int):
+    def __init__(self, capacity: int) -> None:
         """
         @brief Constructor for CircularQueue
         @param capacity The capacity of the CircularQueue
