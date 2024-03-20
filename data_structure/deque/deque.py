@@ -10,7 +10,7 @@ from typing import Union
 from data_structure.queue.queue import CircularQueue
 
 
-class Deque(CircularQueue):
+class CircularDeque(CircularQueue):
     """
     @brief Deque Data Structure Class (Circular Deque)
 
@@ -32,21 +32,21 @@ class Deque(CircularQueue):
         @brief Returns whether the Deque is empty
         @return True if the Deque is empty, False otherwise
         """
-        self.is_empty()
+        return super().is_empty()
 
     def is_full(self) -> bool:
         """
         @brief Returns whether the Deque is full
         @return True if the Deque is full, False otherwise
         """
-        self.is_full()
+        return super().is_full()
 
     def size(self) -> int:
         """
         @brief Returns the size of the Deque
         @return The size of the Deque
         """
-        return self.size()
+        return super().size()
 
     def display_deque(self, message: str) -> None:
         """
@@ -97,7 +97,7 @@ class Deque(CircularQueue):
         """
         if not self.is_empty():
             element = self.array[self.rear]
-            self.rear = (self.rear + 1 + self.capacity) % self.capacity
+            self.rear = (self.rear - 1 + self.capacity) % self.capacity
             return element
         else:
             sys.exit("The Deque is empty")
@@ -111,4 +111,3 @@ class Deque(CircularQueue):
             return self.array[self.rear]
         else:
             print("The Deque is empty")
-            
