@@ -4,7 +4,7 @@
 @author: dongwook heo
 @date: 2024-02-29
 """
-from data_structure import stack
+from data_structure.stack import stack
 
 if __name__ == '__main__':
     s = stack.Stack(100)
