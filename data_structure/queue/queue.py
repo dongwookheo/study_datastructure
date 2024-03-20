@@ -104,7 +104,7 @@ class CircularQueue:
     def display_queue(self, message: str) -> None:
         """
         @brief Displays all the elements in the Queue
-        @return All the elements in the Queue
+        @return None
         """
         print(message, end=": [")
         for i in range(self.front + 1, self.front + 1 + self.size()):
